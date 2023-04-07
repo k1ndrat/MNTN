@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20230404122123">
+	<link rel="stylesheet" href="css/style.min.css?_v=20230407212133">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -58,7 +58,7 @@
 				</div>
 			</div>
 
-			<section class="page__section main-section">
+			<section data-scroll="start" class="page__section main-section">
 				<div class="main-section__container">
 					<div class="main-section__content">
 						<div class="main-section__subtitle fz18-12">
@@ -68,7 +68,7 @@
 						<h1 class="main-section__title">
 							Be prepared for the Mountains and beyond!
 						</h1>
-						<button class="main-section__scroll fz18-12">
+						<button data-goto=".section-01" data-goto-header data-goto-top="50" class="main-section__scroll fz18-12">
 							<span>scroll down</span>
 							<img src="img/icons/arrow-d.svg" alt="arrow" />
 						</button>
@@ -76,7 +76,7 @@
 				</div>
 			</section>
 
-			<section class="page__section section-01">
+			<section data-scroll="sect-01" class="page__section section-01">
 				<div class="section-01__container">
 					<div class="section-01__body body-sect">
 						<div class="body-sect__subtitle fz18-12">
@@ -109,7 +109,7 @@
 				</div>
 			</section>
 
-			<section class="page__section section-02">
+			<section data-scroll="sect-02" class="page__section section-02">
 				<div class="section-02__container">
 					<div class="section-02__body body-sect">
 						<div class="body-sect__subtitle fz18-12">
@@ -141,7 +141,7 @@
 				</div>
 			</section>
 
-			<section class="page__section section-03">
+			<section data-scroll="sect-03" class="page__section section-03">
 				<div class="section-03__container">
 					<div class="section-03__body body-sect">
 						<div class="body-sect__subtitle fz18-12">
@@ -172,13 +172,82 @@
 					</div>
 				</div>
 			</section>
+
+			<div class="nav-bar__right">
+				<ul class="nav-bar__list fz18-12">
+					<li data-goto=".main-section" class="nav-bar__el start">
+						Start<span></span>
+					</li>
+					<li data-goto=".section-01" data-goto-header data-goto-top="50" class="nav-bar__el sect-01">
+						01<span></span>
+					</li>
+					<li data-goto=".section-02" data-goto-header data-goto-top="50" class="nav-bar__el sect-02">
+						02<span></span>
+					</li>
+					<li data-goto=".section-03" data-goto-header data-goto-top="50" class="nav-bar__el sect-03">
+						03<span></span>
+					</li>
+				</ul>
+			</div>
 		</main>
 		<footer class="footer">
 			<div class="footer__container">
+				<div class="footer__info">
+					<div class="footer__text">
+						<a href="/" class="footer__logo"> MNTN </a>
+						<div class="footer__description fz18-12">
+							<p>
+								Get out there & discover your next slope, mountain &
+								destination!
+							</p>
+						</div>
+					</div>
+					<div class="footer__copyright fz18-12" data-da=".footer__container,656">
+						Copyright 2019 MNTN, Inc. Terms & Privacy
+					</div>
+				</div>
+				<div class="footer__menu footer-menu">
+					<nav class="footer-menu__nav">
+						<div class="footer-menu__title">More on The Blog</div>
+						<ul class="footer-menu__list fz18-12">
+							<li class="footer-menu__element">
+								<a href="/" class="footer-menu__link">About MNTN</a>
+							</li>
+							<li class="footer-menu__element">
+								<a href="/" class="footer-menu__link">Contributors & Writers</a>
+							</li>
+							<li class="footer-menu__element">
+								<a href="/" class="footer-menu__link">Write For Us</a>
+							</li>
+							<li class="footer-menu__element">
+								<a href="/" class="footer-menu__link">Contact Us</a>
+							</li>
+							<li class="footer-menu__element">
+								<a href="/" class="footer-menu__link">Privacy Policy</a>
+							</li>
+						</ul>
+					</nav>
+
+					<nav class="footer-menu__nav">
+						<div class="footer-menu__title">More on MNTN</div>
+						<ul class="footer-menu__list fz18-12">
+							<li class="footer-menu__element">
+								<a href="/" class="footer-menu__link">The Team</a>
+							</li>
+							<li class="footer-menu__element">
+								<a href="/" class="footer-menu__link">Jobs</a>
+							</li>
+							<li class="footer-menu__element">
+								<a href="/" class="footer-menu__link">Press</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
 			</div>
 		</footer>
+
 	</div>
-	<script src="js/app.min.js?_v=20230404122123"></script>
+	<script src="js/app.min.js?_v=20230407212133"></script>
 </body>
 
 </html>
